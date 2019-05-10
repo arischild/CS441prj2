@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var d1: UILabel!
     @IBOutlet weak var d2: UILabel!
     @IBOutlet weak var d3: UILabel!
+    @IBOutlet weak var header: UILabel!
+    
+    
     
     var colA = [UILabel]()
     var colB = [UILabel]()
@@ -92,6 +95,9 @@ class ViewController: UIViewController {
                         if tempj! > 0 {
                             if tempi! == tempj! {
                                 col[i].text = String("\(tempi! + tempi!)")
+                                if col[i].text == "2048" {
+                                    header.text = "Congratulations! You have reached 2048"
+                                }
                                 col[j].text = String("\(0)")
                             }
                             j = 4
@@ -134,6 +140,9 @@ class ViewController: UIViewController {
                         if tempj! > 0 {
                             if tempi! == tempj! {
                                 col[i].text = String("\(tempi! +   tempi!)")
+                                if col[i].text == "2048" {
+                                    header.text = "Congratulations! You have reached 2048"
+                                }
                                 col[j].text = String("\(0)")
                             }
                             j = -1
@@ -175,6 +184,9 @@ class ViewController: UIViewController {
                         if tempj! > 0 {
                             if tempi! == tempj! {
                                 row[i].text = String("\(tempi! + tempi!)")
+                                if row[i].text == "2048" {
+                                    header.text = "Congratulations! You have reached 2048"
+                                }
                                 row[j].text = String("\(0)")
                             }
                             j = 4
@@ -217,6 +229,9 @@ class ViewController: UIViewController {
                         if tempj! > 0 {
                             if tempi! == tempj! {
                                 row[i].text = String("\(tempi! +   tempi!)")
+                                if row[i].text == "2048" {
+                                    header.text = "Congratulations! You have reached 2048"
+                                }
                                 row[j].text = String("\(0)")
                             }
                             j = -1
